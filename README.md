@@ -1,4 +1,4 @@
-<h1>🔐 Door Locker Security System (Dual ATmega32)</h1>
+<h1> Door Locker Security System (Dual ATmega32)</h1>
 <p>
   A robust <strong>Door Locker Security System</strong> developed using <strong>two ATmega32 microcontrollers</strong> operating at <strong>8 MHz</strong>.
   The system allows users to unlock a secured door using a password and features a full <strong>layered architecture</strong> with 
@@ -7,14 +7,14 @@
 
 <hr />
 
-<h2>🚀 Project Overview</h2>
+<h2>📌 Project Overview</h2>
 <p>
   This project demonstrates the design and implementation of a <strong>secure embedded access control system</strong>.
   The HMI ECU interacts with the user through a keypad and LCD, while the Control ECU manages decision-making, motor control, EEPROM storage, and alarm activation.
   The system uses <strong>UART communication</strong> between both microcontrollers and ensures secure password management.
 </p>
 
-<h3>🎯 Objectives</h3>
+<h3>📌 Objectives</h3>
 <ul>
   <li>Implement a dual-ECU security system (HMI &amp; Control).</li>
   <li>Allow password creation, verification, and storage in external EEPROM.</li>
@@ -26,7 +26,7 @@
 
 <hr />
 
-<h2>⚙️ System Architecture</h2>
+<h2>📌 System Architecture</h2>
 <pre><code>                 ┌─────────────────────────────┐
                  │         HMI_ECU             │
                  │ ─────────────────────────── │
@@ -48,7 +48,7 @@
 
 <hr />
 
-<h2>🧩 Features</h2>
+<h2>📌 Features</h2>
 <ul>
   <li>Two-microcontroller architecture (HMI &amp; Control).</li>
   <li>Password creation, confirmation, and persistent storage in EEPROM.</li>
@@ -60,7 +60,7 @@
 
 <hr />
 
-<h2>🧱 System Workflow</h2>
+<h2>📌 System Workflow</h2>
 <ol>
   <li><strong>Step 1 – Create a System Password</strong>
     <ul>
@@ -111,7 +111,7 @@
 
 <hr />
 
-<h2>🧰 Software Layers</h2>
+<h2>📌 Software Layers</h2>
 <ul>
   <li><strong>MCAL (Microcontroller Abstraction Layer):</strong> GPIO, Timer1, UART, I2C/TWI.</li>
   <li><strong>HAL (Hardware Abstraction Layer):</strong> LCD, Keypad, DC Motor, Buzzer, EEPROM.</li>
@@ -120,7 +120,7 @@
 
 <hr />
 
-<h2>🔧 Drivers Implemented</h2>
+<h2>📌 Drivers Implemented</h2>
 <table>
   <thead>
     <tr><th>Driver</th><th>Description</th><th>Connected To</th></tr>
@@ -140,7 +140,7 @@
 
 <hr />
 
-<h2>🧪 Testing &amp; Validation</h2>
+<h2>📌 Testing &amp; Validation</h2>
 <ul>
   <li>Verified UART communication stability between ECUs.</li>
   <li>EEPROM tested for reliable data persistence and read/write accuracy.</li>
@@ -151,14 +151,12 @@
 
 <hr />
 
-<h2>🧰 Build &amp; Run Instructions</h2>
+<h2>📌 Build &amp; Run Instructions</h2>
 
 <h3>Requirements</h3>
 <ul>
-  <li>Atmel Studio / Microchip Studio</li>
-  <li>Two ATmega32 Development Boards</li>
-  <li>STK or USBasp Programmer</li>
-  <li>Proteus (for simulation)</li>
+  <li>Eclipse</li>
+  <li>Proteus</li>
 </ul>
 
 <h3>Steps</h3>
@@ -173,7 +171,7 @@
 
 <hr />
 
-<h2>📁 Example LCD Display Flow</h2>
+<h2>📌 Example LCD Display Flow</h2>
 <pre><code>[System Boot]
 Please Enter Password:
 *****
@@ -192,7 +190,7 @@ Door is Locking...
 
 <hr />
 
-<h2>🚀 Future Enhancements</h2>
+<h2>📌 Future Enhancements</h2>
 <ul>
   <li>Add <strong>RFID/NFC authentication</strong> alongside password input.</li>
   <li>Implement <strong>Bluetooth or Wi-Fi</strong> remote control.</li>
@@ -202,25 +200,3 @@ Door is Locking...
 
 <hr />
 
-<h2>📚 References</h2>
-<ul>
-  <li>ATmega32 Datasheet – Microchip Technology</li>
-  <li>Embedded Systems Course by Eng. Mohamed Tarek</li>
-  <li>UART, I2C, Timer1 AVR Driver Implementations</li>
-  <li>Proteus Simulation Documentation</li>
-</ul>
-
-<hr />
-
-<h2>👨‍💻 Author</h2>
-<p>
-  <strong>Mohaned Hossam</strong><br />
-  Embedded Software Engineer<br />
-  📧 <a href="mailto:mohanedtohamy444@gmail.com">mohanedtohamy444@gmail.com</a><br />
-  🔗 <a href="https://www.linkedin.com/in/mohaned-hossam-8593041b3">LinkedIn</a><br />
-  💻 <a href="https://github.com/MOHANED01">GitHub</a>
-</p>
-
-<hr />
-
-<p><strong>⭐ “Secure embedded design begins with layered logic and precise communication.”</strong></p>
